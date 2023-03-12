@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+
+<body>
+    <ul>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </ul>
+    <script>
+        let form = document.getElementsByTagName('form')
+        let submit = document.getElementById('submit')
+        submit.addEventListener('click', (e) => {
+            e.preventDefault()
+            let data = new FormData(form[0])
+            for (const [key, value] of data) console.log(key + " " + value)
+        })
+        submit.addEventListener('mouseover', (e) => {
+            alert('mouse is on submit button')
+        })
+        submit.addEventListener('mouseover', (e) => {
+            alert('mouse is out from submit button')
+        })
+    </script>
+</body>
+
+</html>
