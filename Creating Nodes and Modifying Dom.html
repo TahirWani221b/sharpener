@@ -51,8 +51,17 @@
 
         /// firstElementChild  ------> returns first child , even if the first node is text node , THAT'S WHY AVOID USING IT. 
 
-       /// lastElementChild -----> return last node 
+        /// lastElementChild -----> return last node 
 
+        let newdiv = document.createElement('div')
+        newdiv.className = 'hello'
+        newdiv.id = 'newdiv'
+        newdiv.title = 'this is hello message'
+        let textnode = document.createTextNode('hello world')
+        newdiv.appendChild(textnode)
+        console.log(newdiv)
+
+        document.querySelector('.container').appendChild(newdiv)
     </script>
 </body>
 
