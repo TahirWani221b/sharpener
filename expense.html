@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="expenseScript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container my-3">
+        <div class="row justify-content-center m-4">
+            <h3 class="col-6 text-center">Expense Tracker Application</h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 p-5 rounded border border-secondary">
+                <form id="myForm">
+                    <div class="mb-3">
+                        <label class="form-label" for="expense_amount">Choose Expense Amount :</label>
+                        <input type="number" id="expense_amount" name="expense_amount" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="choose_desc"> Choose Description :</label>
+                        <input type="text" id-="choose_desc" name="choose_desc" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="choose_a_cat">Choose a Category :</label>
+                        <select class="form-select" id="choose_a_cat" name="choose_a_cat">
+                            <option value="Movies">Movies</option>
+                            <option value="shoping">Shoping</option>
+                            <option value="study">Study</option>
+                            <option value="Vacation">Vacation</option>
+                        </select>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
