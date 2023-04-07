@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 10px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="addNewproducts" onsubmit="operationsOnData(event)">
+        <label for="productName">Product Name: </label>
+        <input type="text" id="productName" name="productName">
+        <label for="productPrice">Product Price: </label>
+        <input type="number" id="productPrice" name="productPrice">
+        <label for="productCategory">Select Product Category: </label>
+        <select id="productCategory" name="productCategory">
+            <option value="skincare">Skin Care</option>
+            <option value="food">Food</option>
+            <option value="clothes">clothes</option>
+        </select>
+        <button id="submit" type="submit">Add Product</button>
+    </form>
+    <div id="appendData"></div>
+    <script>
+        function operationsOnData(event) {
+            event.preventDefault();
+            let productForm = document.getElementById('addNewproducts');
+            let productdata = new FormData(productForm);
+            let formDataObj = new Object();
+            productdata.forEach((value, index) => formDataObj[index] = value);
+            saveProductCall(formDataObj);
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            showAllProductCall();
+            document.addEventListener('click', (event) => {
+                let del = event.target.closest('.delete_product');
+                if (del) {
+                    let del_product_id = del.getAttribute('id');
+                    delProductCall(del_product_id);
+                }
+            })
+        })
+
+        async function showAllProductCall() {
+            try {
+                let result = await axios.get('https://crudcrud.com/api/0ffd5abd68f3440b936ef7b076a83681/firstDataRequest');
+                console.log(result.data)
+                let output = '<table><thead><tr><th>Product Name</th><th>Product Price</th><th>Product Catrgory</th><th>Operation</th></tr></thead><tbody id="myTableBody">';
+                result.data.forEach((value, index, array) => {
+                    output += '<tr><td>' + value.productName + '</td><td>' + value.productPrice + '</td><th>' + value.productCategory + '</td><td><button class="delete_product" id=' + value._id + '>Delete</button></td></tr>';
+                });
+                output += '</tbody></table>';
+
+                document.getElementById('appendData').innerHTML = output;
+            } catch (error) {
+                console.log(`ERROR :${error}`)
+            }
+        }
+
+        async function saveProductCall(formDataObj) {
+            try {
+                let result = await axios.post('https://crudcrud.com/api/0ffd5abd68f3440b936ef7b076a83681/firstDataRequest', formDataObj);
+                console.log(result.data);
+                output = '<tr><td>' + result.data.productName + '</td><td>' + result.data.productPrice + '</td><th>' + result.data.productCategory + '</td><td><button class="delete_product" id=' + result.data._id + '>Delete</button></td></tr>';
+                let table = document.getElementById("myTableBody");
+                table.insertAdjacentHTML('beforeend', output);
+                console.log(output)
+            } catch (error) {
+                console.log(`ERROR :${error}`)
+            }
+        }
+
+        async function delProductCall(del_product_id) {
+            try {
+                let result = await axios.delete('https://crudcrud.com/api/0ffd5abd68f3440b936ef7b076a83681/firstDataRequest/' + del_product_id);
+                console.log(result);
+                document.getElementById(del_product_id).parentNode.parentNode.remove();
+            } catch (error) {
+                console.log(`ERROR :${error}`)
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
