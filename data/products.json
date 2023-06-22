@@ -1,17 +1,16 @@
 [
     {
-        "title": "book"
+        "id": "3001",
+        "title": "A Book",
+        "imageUrl": "https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg",
+        "description": "This is an awesome book!",
+        "price": "19"
     },
     {
-        "title": "laptop"
-    },
-    {
-        "title": "bottle"
-    },
-    {
-        "title": "cpu"
-    },
-    {
-        "title": "mobile"
+        "id": "3002",
+        "title": "2nd book",
+        "imageUrl": "https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg",
+        "description": "this book is for sale",
+        "price": "330"
     }
 ]
