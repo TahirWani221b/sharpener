@@ -38,19 +38,21 @@ exports.getEditProduct = (req, res, next) => {
   if (editMode != 'true') {
     return res.redirect('/');
   } else {
-    Product.findByPk(productId).then(result => {
-      if (!result) {
-        return res.redirect('/');
-      }
-      res.render('admin/edit-product', {
-        pageTitle: 'Edit Product',
-        path: '/admin/edit-product',
-        editing: editMode,
-        product: result
+    req.user.getProducts({ where: { id: productId } })
+      .then(results => {
+        const result = results[0];
+        if (!result) {
+          return res.redirect('/');
+        }
+        res.render('admin/edit-product', {
+          pageTitle: 'Edit Product',
+          path: '/admin/edit-product',
+          editing: editMode,
+          product: result
+        });
+      }).catch(err => {
+        console.log(err);
       });
-    }).catch(err => {
-      console.log(err);
-    });
   }
 };
 
@@ -59,29 +61,31 @@ exports.postAddProduct = (req, res, next) => {
   const imageUrl = req.body.imageUrl;
   const price = req.body.price;
   const description = req.body.description;
-  Product.create({
+  req.user.createProduct({
     title: title,
     price: price,
     imageUrl: imageUrl,
     description: description,
-  }).then(result => {
-    // console.log(result);
-    res.redirect('/admin/products');
-  }).catch(err => {
-    console.log(err);
-  });
+  })
+    .then(result => {
+      // console.log(result);
+      res.redirect('/admin/products');
+    }).catch(err => {
+      console.log(err);
+    });
 };
 
 exports.getProducts = (req, res, next) => {
-  Product.findAll().then(result => {
-    res.render('admin/products', {
-      prods: result,
-      pageTitle: 'Admin Products',
-      path: '/admin/products'
+  req.user.getProducts()
+    .then(result => {
+      res.render('admin/products', {
+        prods: result,
+        pageTitle: 'Admin Products',
+        path: '/admin/products'
+      });
+    }).catch(err => {
+      console.log(err);
     });
-  }).catch(err => {
-    console.log(err);
-  });
 };
 
 exports.deleteProduct = (req, res, next) => {
