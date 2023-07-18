@@ -1,7 +1,7 @@
 const sequelize = require('../utils/database-connect');
 const Sequilize = require('sequelize');
 
-const bookingApp = sequelize.define('bookingApp', {
+const expenseApp = sequelize.define('expense-app', {
     id: {
         type: Sequilize.INTEGER,
         autoIncrement: true,
@@ -10,7 +10,7 @@ const bookingApp = sequelize.define('bookingApp', {
     },
     name: Sequilize.STRING,
     email: Sequilize.STRING,
-    phone: Sequilize.STRING
+    password: Sequilize.STRING,
 });
 
-module.exports = bookingApp;
+module.exports = expenseApp;
