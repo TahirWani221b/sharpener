@@ -35,13 +35,12 @@ signupForm.addEventListener('submit', (event) => {
             const response = await axios.post('http://localhost:4000/user/signup/', stringifiedData, config);
             console.log(response);
             if (response.data.status === true) {
-                alert('signUp-successful!!');
-            } else {
-                alert('signUp-failed!!');
+                alert(response.data.message[0]);
             }
             signupForm.reset();
         } catch (error) {
-            alert(error);
+            alert(error.response.data.message[0]);
+            console.log(error);
             return false;
         }
     }

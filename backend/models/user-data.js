@@ -1,7 +1,7 @@
 const sequelize = require('../utils/database-connect');
 const Sequilize = require('sequelize');
 
-const expenseApp = sequelize.define('expense-app', {
+const expenseApp = sequelize.define('users', {
     id: {
         type: Sequilize.INTEGER,
         autoIncrement: true,
@@ -9,7 +9,11 @@ const expenseApp = sequelize.define('expense-app', {
         primaryKey: true
     },
     name: Sequilize.STRING,
-    email: Sequilize.STRING,
+    email: {
+        type: Sequilize.STRING,
+        allowNull: false,
+        unique: true,
+    },
     password: Sequilize.STRING,
 });
 

@@ -8,9 +8,11 @@ module.exports.signup = (req, res, next) => {
         password: requestData.password
     })
         .then(() => {
-            res.status(200).json({ status: true });
+            res.status(200).json({ status: true, messages: 'User Register Successfully!!' });
         })
-        .catch(err => {
-            res.status(404).json({ status: false });
-        })
+        .catch(error => {
+            const { errors } = error;
+            const errorMessages = errors.map(error => error.message);
+            res.status(409).json({ status: false, message: errorMessages });
+        });
 }
