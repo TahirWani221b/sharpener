@@ -34,11 +34,11 @@ function userSignUp(event) {
             const response = await axios.post('http://localhost:4000/user/signup/', stringifiedData, config);
             console.log(response);
             if (response.data.status === true) {
-                alert(response.data.message[0]);
+                alert(response.data.messages);
             }
             signupForm.reset();
         } catch (error) {
-            alert(error.response.data.message[0]);
+            alert(error.response.data.messages);
             console.log(error);
             return false;
         }

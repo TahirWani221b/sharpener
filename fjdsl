@@ -1,0 +1,281 @@
+[33mcommit bfc7c135a8f4701521b9dbe8d7be7223619fed50[m[33m ([m[1;36mHEAD -> [m[1;32mproject-expense-tracker[m[33m, [m[1;31morigin/project-expense-tracker[m[33m)[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Jul 20 13:13:46 2023 +0530
+
+    login
+
+[33mcommit dbc3119043d6b53641b68706fa7b0a5fe38d9f34[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Jul 18 23:58:36 2023 +0530
+
+    user saving in backend
+
+[33mcommit a4bd03df4cff23072ab0ca64dd9055b73ce1ecef[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Jul 18 23:08:35 2023 +0530
+
+    user-signup
+
+[33mcommit fa5eb306b28b77c3f72a41e60a383ce9cca40525[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Jul 18 22:16:08 2023 +0530
+
+    new-project
+
+[33mcommit e001a357750c9831bc9e05a27ba2c0eb4d14d2f6[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Jul 18 22:13:42 2023 +0530
+
+    new-branch
+
+[33mcommit 6b04279419b84ee86a6a170d2c3fb02c432ee305[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sun Jul 2 05:06:53 2023 +0530
+
+    Cart with many to many relationship
+
+[33mcommit fe67596712a009fb18a3dd4f06f1637de350d3df[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sat Jul 1 04:08:07 2023 +0530
+
+    Design the User and Product relationship
+
+[33mcommit bdc9c6ca5bcb33af718d42a7f0571773c1c204ab[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Fri Jun 30 01:20:30 2023 +0530
+
+    CRUD USING SEQUILIZE
+
+[33mcommit d3046edda90d0052d70a3f221e28f57ddb221b35[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed Jun 28 22:27:40 2023 +0530
+
+    Retrieving data from databases
+
+[33mcommit f6b427e5cbc032029e89ce4b22bbda199e17f2ed[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Jun 22 16:54:23 2023 +0530
+
+    dynamic routes part 1 and 2
+
+[33mcommit db75744e5b18ad1813193526a72f298f3a8cf9e0[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed Jun 21 11:16:10 2023 +0530
+
+    models node.js all
+
+[33mcommit 3b2a9c89339f2c21fe40dbb9c64dbc5bd654ddd0[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Fri Jun 9 01:26:08 2023 +0530
+
+    controlleres 404
+
+[33mcommit 52890197ac9eb48aff93d4ab13d4f554b4eb980d[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Fri Jun 9 00:45:08 2023 +0530
+
+    controllers
+
+[33mcommit c7c8ed514899b2afd5f258a116fd71bb2ac20583[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Jun 8 18:48:11 2023 +0530
+
+    skip ejs
+
+[33mcommit af1d3dc7d6dfbe7840479f3963b3181d3db7620f[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Jun 8 18:00:14 2023 +0530
+
+    module : Serving HTML , CSS and JS (VIEWS)
+
+[33mcommit 341043f09164b3e4ec5c25a4ac8852241ee8f6a9[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Jun 6 01:49:59 2023 +0530
+
+    sharpener task goruping
+
+[33mcommit 4bbc43f70252b5e40e869d7143e0667d6bcefaaa[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Jun 6 01:48:14 2023 +0530
+
+    sharpener first express project simple chat app
+
+[33mcommit 56931783a6a25adfeb240b7746d0df57ac5c0e5c[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Mon May 29 23:54:12 2023 +0530
+
+    routes filteration admin, shop -- again
+
+[33mcommit 61fa5a98b23bdea45e65afcf0a975d1f2ba593a2[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Mon May 29 23:46:03 2023 +0530
+
+    404 page not found video 12 -- again
+
+[33mcommit 2a0ce4f06f796d6c8a0e339d50dd6f5489bf3ff8[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Mon May 29 23:31:39 2023 +0530
+
+    route handling use ,get ,post video 11 -- again
+
+[33mcommit c7aec47068d6bb4dcbaef589e81e80dc1205e10a[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Mon May 29 23:13:12 2023 +0530
+
+    video 10 , get , post request handling -- again
+
+[33mcommit b9429d42a9c66b1744eda6752b6ffdec07fa0d28[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Mon May 29 22:58:22 2023 +0530
+
+    routes and middlewares -- again
+
+[33mcommit 0cb69c128ef7c20bb601259e6c6b556676bb4370[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed May 17 01:15:36 2023 +0530
+
+    first project node
+
+[33mcommit ef382b4597b560e1771e5353e26c3a7b654fb91f[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed May 17 00:31:30 2023 +0530
+
+    routers
+
+[33mcommit b839dc21fe70ff2d5cb62f667ea31cb34002cd29[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue May 16 23:58:52 2023 +0530
+
+    express-middleware-body-parser
+
+[33mcommit f58d41cb73a41b2f3dba158a0c98c154477d868c[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Mon May 15 00:29:04 2023 +0530
+
+    starting with express
+
+[33mcommit 9a3f3c36ecc5f735f19187b83ab3b4ccb6eef65a[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Mon May 15 00:27:48 2023 +0530
+
+    starting with express
+
+[33mcommit 1cccecb3340b56f8498ee3504eb622ece990b7a0[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Apr 25 21:35:34 2023 +0530
+
+    debugger
+
+[33mcommit 09b6f3174224761d3b0568040abfda5eae244c70[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Tue Apr 25 16:09:47 2023 +0530
+
+    route-node-js
+
+[33mcommit 17c02d6091c6fd9f64c4b0e1c127ee2b2310804c[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sun Apr 23 00:58:18 2023 +0530
+
+    read from file demo 1
+
+[33mcommit f1d066dfc9194a546332ad7f5be30a3648f04655[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sat Apr 22 22:36:50 2023 +0530
+
+    server response
+
+[33mcommit 4ad9e876d73bce5b6d1119400220df020221352f[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Fri Apr 21 17:54:22 2023 +0530
+
+    creting first server
+
+[33mcommit a59a6a0a96d8245b6e4f5ae94091a87655142681[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Apr 20 23:45:30 2023 +0530
+
+    node start
+
+[33mcommit df124b70a647276dea6550e12261f8579c3e7187[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sat Apr 8 02:48:23 2023 +0530
+
+    project 1
+
+[33mcommit af3d2be969445efb43d5f441159e09b9191f9e8c[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Fri Apr 7 03:46:56 2023 +0530
+
+    axios
+
+[33mcommit 3aa873c1c4eabed76d533126b644c0f445590e33[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Fri Apr 7 00:54:03 2023 +0530
+
+    async/await
+
+[33mcommit d1531f49b9310c290c4999bd682c1b367d4e4e01[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sun Apr 2 08:43:16 2023 +0530
+
+    new-commit
+
+[33mcommit e254c718935d3dfcca831d550cac1f216cfdb725[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sun Apr 2 04:02:03 2023 +0530
+
+    new-commit
+
+[33mcommit fe1433c0d8490978c36faba5c22b07b7dc6089eb[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Mar 16 02:59:43 2023 +0530
+
+    Lets Scale the app to more users
+
+[33mcommit b8d48fae421d92a675aef2b94323b19150c529fd[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Mar 16 02:14:36 2023 +0530
+
+    project1
+
+[33mcommit 494d208f50c1c5b2a99007a324712eb7d7442406[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Mar 16 01:24:17 2023 +0530
+
+    new file
+
+[33mcommit 3b421c55f35e1ae3f011a9291bfd15af9952da57[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Thu Mar 16 00:49:56 2023 +0530
+
+    creating nodes
+
+[33mcommit b9c0f9b4b4490e2792e52c747d5eff1f3b9b0b1a[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed Mar 15 03:38:57 2023 +0530
+
+    querySelector
+
+[33mcommit 82d64f7eed312e9c9ab2b9f458ba870e22e761e3[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed Mar 15 03:29:22 2023 +0530
+
+    getElementsBYTagName
+
+[33mcommit 157736fc2bfd67c8cbe1d63365f2e4022dd7d7b2[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed Mar 15 03:07:10 2023 +0530
+
+    GetElementsbyClassname
+
+[33mcommit 481fbadb3ceb64b268d418b52020fd5c74ad1ea2[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Wed Mar 15 02:43:13 2023 +0530
+
+    new file to get
+
+[33mcommit c88eb3b13f8434d32d4025822962d1cd64428818[m
+Author: tahir.wani <tahir.waniiqbal@gmail.com>
+Date:   Sun Mar 12 05:37:44 2023 +0530
+
+    first
